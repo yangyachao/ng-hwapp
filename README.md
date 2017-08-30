@@ -44,3 +44,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     }]
 }
 ```
+
+## 示例摘抄自 [Angular 4.x 自定义表单控件](https://segmentfault.com/a/1190000009070500)
