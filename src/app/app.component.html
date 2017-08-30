@@ -18,3 +18,7 @@
   </li>
 </ul>
 
+<form #form="ngForm">
+  <app-counter name='ccc' [(ngModel)]="count"></app-counter>
+</form>
+<pre>{{ form.value|json }}</pre> {{count}}
