@@ -26,3 +26,21 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## 如果我们想用VScode调试，我们先要下载Debugger for chrome 插件到VSCode
+
+然后在工程的launch.jon添加
+``` json
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Launch Chrome against localhost, with sourcemaps",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:4200",
+        "sourceMaps": true,
+        "webRoot": "${workspaceRoot}",
+        "sourceMapPathOverrides": { "webpack:///./*": "${webRoot}/*" }
+    }]
+}
+```
