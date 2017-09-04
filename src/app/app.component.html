@@ -19,6 +19,7 @@
 </ul>
 
 <form #form="ngForm">
-  <app-counter name='ccc' [(ngModel)]="count"></app-counter>
+  <app-counter name='ccc' [(ngModel)]="count" #appcount="ngModel"></app-counter>
 </form>
 <pre>{{ form.value|json }}</pre> {{count}}
+<hr> {{appcount.control.value}}
