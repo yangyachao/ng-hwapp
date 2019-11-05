@@ -23,6 +23,7 @@ export class CounterComponent implements ControlValueAccessor {
 
     get count() {
         return this._count;
+        
     }
 
     set count(value: number) {
